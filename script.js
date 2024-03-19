@@ -52,7 +52,7 @@ startBtn.onclick = () => {
   timeNmbr.style.display = "block";
   timeLine.style.display = "block";
   fixedTime = setInterval(setTime, 1000);
-  setLine = setInterval(lineNmbr,85);
+  setLine = setInterval(lineNmbr,90);
   
   startBtn.onclick = () => {
     index++;
