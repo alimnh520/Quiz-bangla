@@ -139,6 +139,11 @@ body{
 .correct{
   background-color: greenyellow;
   color: #FC2CFF;
+  animation: result 0.5s ease;
+}
+@keyframes result{
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 .incorrect{
   background-color: orangered;
@@ -146,4 +151,7 @@ body{
 }
 .disable-btn{
   pointer-events: none;
+}
+.resultanimate {
+  animation: result 0.5s ease;
 }

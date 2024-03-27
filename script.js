@@ -105,13 +105,14 @@ function addQue() {
         
         for (var i = 0; i < addOption.children.length; i++) {
           
+          /*
           if (addOption.children[i].innerHTML != data.answer) {
             addOption.children[i].classList.add("incorrect");
             addOption.children[i].innerHTML = addOption.children[i].innerHTML+`<i class="fa-solid fa-xmark"></i>`;
             
-          } else if (addOption.children[i].innerHTML == data.answer) {
+          } else */ if (addOption.children[i].innerHTML == data.answer) {
             addOption.children[i].classList.add("correct");
-            addOption.children[i].innerHTML = addOption.children[i].innerHTML + `<i class="fa-solid fa-check"></i>`;
+            addOption.children[i].innerHTML = addOption.children[i].innerHTML+`<i class="fa-solid fa-check"></i>`;
           }
         }
       }
@@ -139,6 +140,7 @@ function showResult() {
 }
 
 function reTry() {
+  startBtn.classList.add("resultanimate");
   startBtn.style.display = "block";
   startBtn.style.zIndex = "2";
   startBtn.innerHTML = "Retry";
